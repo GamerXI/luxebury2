@@ -24,6 +24,8 @@
     <style>
   *{font-family: 'Josefin Sans', sans-serif;}
   section{width: 90%; margin: auto; margin-top: 7.5rem;}
+  .hometext{margin: auto; margin-top: 4rem; text-align: center;}
+  body{background: white;}
   </style>
             
 </head>
@@ -56,18 +58,20 @@
 
 <!-- /////////////////// HOME ////////////////////// -->
 
-
  <div class="carousel carousel-slider">
     <a class="carousel-item" href="#one!"><img src="images/Bathroom1.jpg"></a>
     <div class="carousel-fixed-item center">
-      <h1 class="white-text">Luxury Wellness Bathing Products</h1>
-      <p class="white-text">A complete solution to modern bathrooms.</p>
+      <div class="hometext">
+      <h1 class="white-text container">Luxury Wellness Bathing Products</h1>
+      <p class="white-text container">A complete solution to modern bathrooms.</p>
+      </div>
       <a class="waves-effect waves-light btn-large" href="products.html" target="_blank">
         <i class="material-icons left">bathtub</i>Products</a>
     </div>
     <a class="carousel-item" href="#two!"><img src="images/Bathroom2.jpg"></a>
     <a class="carousel-item" href="#three!"><img src="images/Bathroom1.jpg"></a>
     <a class="carousel-item" href="#four!"><img src="images/Bathroom2.jpg"></a>
+
   </div>
 
 
@@ -209,6 +213,94 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
  -->
 
+
+ <!-- ////////////////////////// CONTACT US /////////////////////////////////////////// -->
+
+
+<section>
+    <h2 class="center-align">Contact Us</h2>
+
+  <div class="row container">
+    <div class="col s4 m4 l4 offset-l4"> <hr> </div>
+  </div>
+
+<div class="row container">
+  <div class="col m6 l6 offset-l3">
+
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+           <i class="material-icons prefix">account_circle</i>
+          <input  id="first_name" type="text" class="validate">
+          <label for="first_name">Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">phone</i>
+          <input id="mobile" type="text" class="validate" data-length="10">
+          <label for="mobile">Phone Number</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mail</i>
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="message" class="materialize-textarea" data-length="200"></textarea>
+          <label for="message">Message</label>
+        </div>
+      </div>
+      <a onclick="M.toast({html: 'Thank you for reaching us.', classes: 'rounded'})" class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </a>
+        
+    </form>
+  </div>
+
+  </div>
+</div>
+
+</section>
+
+
+<!-- ////////////////////////////////// FOOTER /////////////////////////////////////// -->
+
+
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2021 Luxebury
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer> 
+
+
   <script>
 
     $(document).ready(function(){
@@ -216,13 +308,19 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
       $('.carousel.carousel-slider').carousel({
       fullWidth:true,
-      indicators:true
+      indicators:true,
       });
 
       // $('.materialboxed').materialbox();
 
+      $('input#mobile, textarea#message').characterCounter();
+
+      $('#message');
+
 
     });
+
+    
   </script>
 
 </body>
