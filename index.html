@@ -24,11 +24,13 @@
     <style>
   *{font-family: 'Josefin Sans', sans-serif;}
   section{width: 90%; margin: auto; margin-top: 7.5rem;}
+  .slider li img{max-width:100%;height:auto;}
   .hometext1{font-size: 4vw;}
   .hometext2{font-size: 2vw;}
   .homebutton{font-size: 1.2rem; height: 2.5rem;}
   body{background: white;}
   </style>
+  
             
 </head>
 <body>
@@ -61,7 +63,7 @@
 <!-- /////////////////// HOME ////////////////////// -->
 
  <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="images/Bathroom1.jpg"></a>
+    <a class="carousel-item" href="#one!"><img class="responsive-img" src="images/Bathroom1.jpg"></a>
     <div class="carousel-fixed-item center">
       <div>
       <h1 class="white-text container hometext1">Luxury Wellness Bathing Products</h1>
@@ -70,12 +72,11 @@
       <a class="waves-effect waves-light btn homebutton" href="products.html" target="_blank">
         <i class="material-icons left">bathtub</i>Products</a>
     </div>
-    <a class="carousel-item" href="#two!"><img src="images/Bathroom2.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="images/Bathroom1.jpg"></a>
-    <a class="carousel-item" href="#four!"><img src="images/Bathroom2.jpg"></a>
+    <a class="carousel-item" href="#two!"><img class="responsive-img" src="images/Bathroom2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img class="responsive-img" src="images/Bathroom1.jpg"></a>
+    <a class="carousel-item" href="#four!"><img class="responsive-img" src="images/Bathroom2.jpg"></a>
 
   </div>
-
 
 <!-- //////////////////// ABOUT US ////////////////////// -->
 
@@ -321,9 +322,13 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
     });
-
     
   </script>
+
+
+
+
+
 
 </body>
 </html>
