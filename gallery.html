@@ -24,33 +24,44 @@
     <style>
   *{font-family: 'Josefin Sans', sans-serif;}
   section{width: 90%; margin: auto; margin-top: 7.5rem;}
+  .logo-img {
+      max-height: 80px!important;
+      padding: 0px 0px 20px!important;
+      }
   </style>
 
 </head>
 <body>
+</body>
+</html>
 
 
+<!-- ////////////////// NAVBAR ///////////////////////// -->
 
-  <nav class="red">
+  <div class="navbar-fixed">
+  <nav class="black" style="min-height: 64px;">
     <div class="nav-wrapper container">
-      <a href="#!" class="brand-logo">Luxebury</a>
+      <a href="images/Favicon.png" target="_blank"  class="brand-logo ">
+        <img class="logo-img" src="images/Favicon.png" width="80">
+      </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html">Home</a></li>
-        <li><a href="badges.html">About</a></li>
-        <li><a href="collapsible.html">Products</a></li>
-        <li><a href="mobile.html">Contact</a></li>
-        <li><a href="#">Gallery</a></li>
+<!--         <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li> -->
       </ul>
     </div> 
   </nav>
+  </div>
 
   <ul class="sidenav" id="mobile-demo">
     <li><a href="index.html">Home</a></li>
-    <li><a href="badges.html">About</a></li>
-    <li><a href="collapsible.html">Products</a></li>
-    <li><a href="mobile.html">Contact</a></li>
-    <li><a href="#">Gallery</a></li>
+<!--     <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#gallery">Gallery</a></li> -->
   </ul>
 
 
@@ -97,10 +108,19 @@
     <div class="col l4 m4 s12">
       <img src="images/Bathroom2.jpg" class="responsive-img materialboxed" data-caption="Product 9">
     </div>
-
-
   </div>
  </section>
+
+ <!-- ////////////////////////////////// FOOTER /////////////////////////////////////// -->
+
+
+        <footer class="section black white-text center">
+          <div class="footer-copyright">
+            <div class="container">
+            <p class="flow-text"> © 2021 Luxebury </p>
+            </div>
+          </div>
+        </footer> 
 
 <script>
 
@@ -109,6 +129,7 @@
       $('.materialboxed').materialbox();
 
        $('.sidenav').sidenav();
+       $('.scrollspy').scrollSpy();
 
 
     });
